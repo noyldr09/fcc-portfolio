@@ -14,20 +14,28 @@ body {
 }
 
 .navlist1 {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   text-align: center;
+  z-index: 1;
 }
 
-.navlist2 {
-  position: absolute;
-  float: left;
+.navlist2 > div {
+  /* position: absolute; */
+  position: fixed;
+  transform: rotate(-90deg);
+  left: 0;
   top: 50%;
+  z-index: 1;
 }
 
-.navlist3 {
-  position: absolute;
-  float: right;
+.navlist3 > div {
+  /* position: absolute; */
+  position: fixed;
+  transform: rotate(90deg);
+  right: 0;
   top: 50%;
+  z-index: 1;
 }
 
 .list a{
@@ -37,7 +45,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-
+/* 
 .list:nth-child(1):hover {
   position: absolute;
   text-align: left;
@@ -71,7 +79,7 @@ body {
   left: 3%;
   width: 100%;
   cursor: pointer;
-}
+} */
 
 #welcome-section {
   display: flex;
